@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="Untitled.png">
+        <link rel="stylesheet" href="tyyli.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="#home" class="active">A</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a class="active" href="portfolio.html">Etusivu</a>
+                <a href="yhteystiedot.html">Ota yhteyttä</a>
+                <a href="projektit.html">Projektit</a>
+                <a href="resume.html">Resume</a>
+                <a href="harrastukset.html">Harrastukset</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        <ul class="ul_class1">
+        
+          
+            <li><a class="active" href="portfolio.html">Etusivu</a></li>
+            <li><a href="yhteystiedot.html">Ota yhteyttä</a></li>
+            <li><a href="projektit.html">Projektit</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="harrastukset.html">Harrastukset</a></li>
+            
+          </ul>
+          <div style="margin-left:15%;padding:1px 16px;height:1000px;">
+          
+       
+       <h2 style="text-align: center;">Portfolio</h2>
+       <div class="column">
+       <img src="omakuva.jpg" alt="Picture of Andreas" width="460px">
+    </div>
+        <div class="column">
+    <p>Olen 26 vuotias IT tradenomi opiskelija Helsingistä. 
+            Tämä sivusto toimii portfolionani.Kerään tänne kaikki projektini
+        sekä kaikkea muuta hauskaa.</p>
+    </div>
+  
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+    </body>
+    
+</html>

@@ -1,0 +1,132 @@
+
+body {
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color:black;
+    color: aliceblue;
+    margin: 0;
+  }
+  h1{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+
+  
+  }
+ 
+  
+  .header {
+    background-color:navy;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+
+
+    .ul_class1 {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 15%;
+      background-color: navy;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    .ul_class2 {
+      background: black;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    
+    li a.active {
+      background-color: black;
+      color: white;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: black;
+      color: white;
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 15px;
+    }
+
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    [class*="col-"] {
+      width: 100%;
+    }
+    img,
+picture,
+video {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .column {width: 100%;}
+.ul_class1{
+  visibility: hidden;
+}
+  }
+
+  @media only screen and (min-width: 600px) {
+    .column {width: 33%;}
+    .topnav {
+      visibility: hidden;}
+    }
+  
+   /* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color:navy;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: black;
+  color: white;
+} 
